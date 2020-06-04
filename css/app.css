@@ -1,0 +1,140 @@
+* {
+    background-color: #f2f2f2;
+    font-size: 1.1rem;
+}
+
+body {
+    margin: 0;
+}
+
+header, header *,
+footer, footer * {
+    color: white;
+    background-color: black;
+}
+
+header {
+    height: 90px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+@media (min-width: 0) {
+    section#courseList {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr;
+    }
+    
+    section div#siteOverview p,
+    section#courseList div.card {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    div.card {
+        padding: 0.5rem 1em;
+    }
+}
+
+@media (min-width: 576px) {
+    header h1,
+    section#courseList,
+    section div#siteOverview,
+    footer div#footerContent {
+        margin: 0 auto;
+        width: 540px;
+    }
+    
+    section#courseList {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    section div#siteOverview p,
+    section#courseList div.card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    div.card {
+        padding: 1.8rem 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    header h1,
+    section#courseList,
+    section div#siteOverview,
+    footer div#footerContent {
+        margin: 0 auto;
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    header h1,
+    section#courseList,
+    section div#siteOverview,
+    footer div#footerContent {
+        margin: 0 auto;
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header h1,
+    section#courseList,
+    section div#siteOverview,
+    footer div#footerContent {
+        width: 1140px;
+    }
+    
+}
+
+header h1,
+section#courseList,
+section div#siteOverview,
+footer div#footerContent {
+    margin: 0 auto;
+}
+
+section#courseList,
+footer div#footerContent {
+    padding-top: 10px;
+}
+
+div.card {
+    border: solid 1px #e7e7e7;
+    display: flex;
+    flex-direction: column;
+}
+
+div.card hr {
+    border: solid 1px #bdbdbd;
+}
+
+div.card, div.card * {
+    background-color: white;
+}
+
+div.card div.card-footer {
+    margin-top: auto;
+}
+
+div.card div.card-footer a.btn-link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    height: 100px;
+}
